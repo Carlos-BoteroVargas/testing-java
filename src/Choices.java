@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Choices {
     public static void main(String args[]) {
-        String question = "Which language is easier to learn?";
+        String question = "Which language is easier to learn?"+"\n"+"(Please answer A, B, or C)";
         String choiceOne = "Option A: Javascript";
         String choiceTwo = "Option B: Python";
         String choiceThree = "Option C: Java";
@@ -12,19 +12,16 @@ public class Choices {
         // Write a print statement asking the question
         System.out.println(question);
         // Write a print statement giving the answer choices
-        System.out.println(choiceOne);
-        System.out.println(choiceTwo);
-        System.out.println(choiceThree);
+        System.out.println(choiceOne +"\n"+ choiceTwo +"\n"+ choiceThree +"\n"+ "------------");
 
         // Have the user input an answer
-        System.out.println("Please answer A, B, or C.");
+        Scanner scanner = new Scanner(System.in);
         // Retrieve the user's input
-        Scanner input = new Scanner(System.in);
-        String answer = input.next();
+        String input = scanner.next();
 
         // If the user's input matches the correctAnswer...
         // then the user is correct and we want to print out a congrats message to the user.
-        if(answer == correctAnswer) {
+        if(correctAnswer.equals(input)) {
             System.out.println("CONGRATULATIONS!!! You have solved the riddle");
         }
         // If the user's input does not match the correctAnswer...
