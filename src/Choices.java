@@ -7,7 +7,7 @@ public class Choices {
         String choiceTwo = "Option B: Python";
         String choiceThree = "Option C: Java";
 
-        String correctAnswer = "C";
+        String correctAnswer = "c";
 
         // Write a print statement asking the question
         System.out.println(question);
@@ -21,7 +21,7 @@ public class Choices {
 
         // If the user's input matches the correctAnswer...
         // then the user is correct and we want to print out a congrats message to the user.
-        if(correctAnswer.equals(input)) {
+        if(correctAnswer.equals(input.toLowerCase())) {
             System.out.println("CONGRATULATIONS!!! You have solved the riddle");
         }
         // If the user's input does not match the correctAnswer...
