@@ -1,5 +1,5 @@
 
-# Drag 'n Drop Testing
+# Testing Java
 
 Various exercises on java.
 
